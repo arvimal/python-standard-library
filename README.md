@@ -1,15 +1,12 @@
 # Python Standard Library
 
-<!-- MarkdownTOC -->
+These are notes taken while studying the Python standard library.
 
-- 1. `re`
-    - 1.1. `re` Character classes
-    - 1.2. How to use the `re` module?
+## Table of Contents
 
-<!-- /MarkdownTOC -->
-
-
-Notes taken while studying the Python standard library.
+1. [`re`](https://github.com/arvimal/python-standard-library#1-re)
+    1.1. [`re` Character classes](https://github.com/arvimal/python-standard-library#11-re-character-classes)
+    1.2. [How to use the `re` module?](https://github.com/arvimal/python-standard-library#12-how-to-use-the-re-module)
 
 ## 1. `re`
 
@@ -17,6 +14,8 @@ Regular expressions, called regexes for short, are descriptions for a pattern of
 
 ### 1.1. `re` Character classes
 
+Character | Action
+--------- | -------
 | \d | Any numeric(number) from 0 to 9|
 | \D | Any character that is not a numeric(number from 0 to 9)|
 | \w | Any letter, number, or underscore character. ie. word characters|
