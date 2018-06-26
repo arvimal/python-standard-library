@@ -17,20 +17,12 @@ Regular expressions, called regexes for short, are descriptions for a pattern of
 
 ### 1.1. `re` Character classes
 
-
-
 | \d | Any numeric(number) from 0 to 9|
------| -----
 | \D | Any character that is not a numeric(number from 0 to 9)|
------| -----
 | \w | Any letter, number, or underscore character. ie. word characters|
------| -----
 | \W | Any character that is not a letter, number, or underscore character|
------| -----
 | \s | Any space, tab, newline character.|
------| -----
 | \S | Any character that is not a space, tab, or newline.|
------| -----
 
 ### 1.2. How to use the `re` module?
 
