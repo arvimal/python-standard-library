@@ -1,29 +1,38 @@
-Python Standard Library
-== == == == == == == == == == == ==
+# Python Standard Library
+
+<!-- MarkdownTOC -->
+
+- 1. `re`
+    - 1.1. `re` Character classes
+    - 1.2. How to use the `re` module?
+
+<!-- /MarkdownTOC -->
+
 
 Notes taken while studying the Python standard library.
 
-# 1. `re`
-
-```text
-
-“Knowing[regular expressions] can mean the difference between solving a problem in 3 steps and solving it in 3, 000 steps. When you’re a nerd, you forget that the problems you solve with a couple keystrokes can take other people days of tedious, error - prone work to slog through.”
-
-- Cory Doctorow
-```
+## 1. `re`
 
 Regular expressions, called regexes for short, are descriptions for a pattern of text.
 
-# 1.1. `re` Character classes
+### 1.1. `re` Character classes
+
+
 
 | \d | Any numeric(number) from 0 to 9|
+-----| -----
 | \D | Any character that is not a numeric(number from 0 to 9)|
+-----| -----
 | \w | Any letter, number, or underscore character. ie. word characters|
+-----| -----
 | \W | Any character that is not a letter, number, or underscore character|
+-----| -----
 | \s | Any space, tab, newline character.|
+-----| -----
 | \S | Any character that is not a space, tab, or newline.|
+-----| -----
 
-# 1.2. How to use the `re` module?
+### 1.2. How to use the `re` module?
 
 The `re` module is used to create a regular expression object, and operations such as `search` are done on said object.
 
@@ -64,5 +73,6 @@ In short, the steps to create and use a Regular expression object is:
 4. Call the match object's `group()` method to return the actual string.
 
 Even though the fourth step is not required, it helps to understand that the searched string is properly matched.
+
 
 
