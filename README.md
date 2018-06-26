@@ -1,12 +1,19 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents** 
+
+- [Python Standard Library](#python-standard-library)
+  - [Table of Contents](#table-of-contents)
+  - [1. `re`](#1-re)
+    - [1.1. `re` Character classes](#11-re-character-classes)
+    - [1.2. How to use the `re` module?](#12-how-to-use-the-re-module)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Python Standard Library
 
-These are notes taken while studying the Python standard library.
+Notes taken while studying the Python standard library.
 
-## Table of Contents
-
-1.[`re`](https://github.com/arvimal/python-standard-library#1-re)
-  1.1.[`re` Character classes](https://github.com/arvimal/python-standard-library#11-re-character-classes)
-  1.2.[How to use the `re` module?](https://github.com/arvimal/python-standard-library#12-how-to-use-the-re-module)
 
 ## 1. `re`
 
