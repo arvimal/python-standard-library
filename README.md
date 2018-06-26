@@ -3,7 +3,6 @@
 **Table of Contents**
 
 - [Python Standard Library](#python-standard-library)
-  - [Table of Contents](#table-of-contents)
   - [1. `re`](#1-re)
     - [1.1. `re` Character classes](#11-re-character-classes)
     - [1.2. How to use the `re` module?](#12-how-to-use-the-re-module)
