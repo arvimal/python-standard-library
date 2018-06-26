@@ -4,9 +4,9 @@ These are notes taken while studying the Python standard library.
 
 ## Table of Contents
 
-1. [`re`](https://github.com/arvimal/python-standard-library#1-re)
-  1.1. [`re` Character classes](https://github.com/arvimal/python-standard-library#11-re-character-classes)
-  1.2. [How to use the `re` module?](https://github.com/arvimal/python-standard-library#12-how-to-use-the-re-module)
+1.[`re`](https://github.com/arvimal/python-standard-library#1-re)
+  1.1.[`re` Character classes](https://github.com/arvimal/python-standard-library#11-re-character-classes)
+  1.2.[How to use the `re` module?](https://github.com/arvimal/python-standard-library#12-how-to-use-the-re-module)
 
 ## 1. `re`
 
