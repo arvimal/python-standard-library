@@ -5,7 +5,9 @@
 - [Python Standard Library](#python-standard-library)
   - [1. `re`](#1-re)
     - [1.1. `re` Character classes](#11-re-character-classes)
-    - [1.2. How to use the `re` module?](#12-how-to-use-the-re-module)
+    - [1.2. Using the `re` module](#12-using-the-re-module)
+    - [1.3. Grouping pattern matching with parantheses](#13-grouping-pattern-matching-with-parantheses)
+    - [1.4. Matching multiple patterns with pipe (|)](#14-matching-multiple-patterns-with-pipe-)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -28,7 +30,7 @@ Character | Action
 | \s | Any space, tab, newline character.|
 | \S | Any character that is not a space, tab, or newline.|
 
-### 1.2. Using the `re` module?
+### 1.2. Using the `re` module
 
 The `re` module is used to create a regular expression object, and operations such as `search` are done on said object.
 
