@@ -91,6 +91,46 @@ In [15]: phone_num_group_re.search("9860152544")
 <None> - <No match>
 ```
 
+### 1.4. Matching multiple patterns with pipe (|)
+
+It is possible to match the occurrence of any one of multiple strings/numbers using regex.
+
+Checking if any from a specific list of words occur in a string (curse words for example) can be achieved through a pipe regex.
+
+```python
+In [26]: str_regex = re.compile("Great|Awesome|Excellent")
+
+In [27]: str_regex.search("This is both Great and Excellent")
+Out[27]: <_sre.SRE_Match object; span=(13, 18), match='Great'>
+
+In [34]: str_regex.search("This is both Great and Excellent").group()
+Out[34]: 'Great'
+
+In [35]: str_regex.findall("This is both Great and Excellent")
+Out[35]: ['Great', 'Excellent']
+```
+
+The search ends at the first occurrence. The above example shows that even though the sentence had both `Great` and `Excellent` in it and both were part of the regex, the search stopped and lists only `Great`.
+
+In case you want to find all the occurrences of the regex components in the input string, use the `findall()` method on the regex object.
 
 
+**IMPORTANT:** Do not put spaces in between the pipes while passing to `re.compile()`. This will fail the search. Check the example below:
+
+```python
+In [38]: str_regex = re.compile("Great | Awesome | Excellent", re.IGNORECASE)
+
+In [39]: str_regex.search("This is great")
+None - No match
+In [40]: str_regex.search("This is awesome")
+None - No match
+
+In [41]: str_regex_proper = re.compile("Great|Awesome|Excellent", re.IGNORECASE)
+
+In [42]: str_regex_proper.search("This is awesome")
+Out[42]: <_sre.SRE_Match object; span=(8, 15), match='awesome'>
+
+In [43]: str_regex_proper.search("This is great")
+Out[43]: <_sre.SRE_Match object; span=(8, 13), match='great'>
+```
 
