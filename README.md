@@ -28,7 +28,7 @@ Character | Action
 | \s | Any space, tab, newline character.|
 | \S | Any character that is not a space, tab, or newline.|
 
-### 1.2. How to use the `re` module?
+### 1.2. Using the `re` module?
 
 The `re` module is used to create a regular expression object, and operations such as `search` are done on said object.
 
@@ -61,14 +61,36 @@ In[17]: my_search.group()
 Out[17]: '0123456789'
 ```
 
-In short, the steps to create and use a Regular expression object is:
+In short, the steps to create and use a Regular expression object are:
 
 1. Import the `re` module.
 2. Create a Regex object by passing the desired pattern to `re.compile()`.
 3. Pass the string to search for, to the regex's `search()` method, which returns a match object.
 4. Call the match object's `group()` method to return the actual string.
 
-Even though the fourth step is not required, it helps to understand that the searched string is properly matched.
+Even though the fourth step is not generally required, it helps to understand that the searched string is properly matched.
+
+### 1.3. Grouping pattern matching with parantheses
+
+```python
+In [6]: num_pattern = "(\d\d\d)-(\d\d\d)-(\d\d\d\d)"
+
+In [7]: num_pattern
+Out[7]: '(\\d\\d\\d)-(\\d\\d\\d)-(\\d\\d\\d\\d)'
+
+In [9]: phone_num_group_re = re.compile(num_pattern)
+Out[9]: re.compile(r'(\d\d\d)-(\d\d\d)-(\d\d\d\d)', re.UNICODE)
+
+In [11]: phone_num_group_re.search("986-015-2544")
+Out[11]: <_sre.SRE_Match object; span=(0, 12), match='986-015-2544'>
+
+In [12]: phone_num_group_re.search("986-015-2544").group()
+Out[12]: '986-015-2544'
+
+In [15]: phone_num_group_re.search("9860152544")
+<None> - <No match>
+```
+
 
 
 
