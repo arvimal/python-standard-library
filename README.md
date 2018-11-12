@@ -13,11 +13,13 @@
 
 # Python Standard Library
 
-Notes taken while studying the Python standard library.
-
 ## 1. `re`
 
-Regular expressions, called regexes for short, are descriptions for a pattern of text.
+Regular expressions, also called regex, are descriptions for patterns of text.
+
+The text can consist of words, numbers, spaces etc..
+
+In Python, the `re` module provides the capability to create a regular expression object, and search/match values with it.
 
 ### 1.1. `re` Character classes
 
@@ -32,9 +34,17 @@ Character | Action
 
 ### 1.2. Using the `re` module
 
-The `re` module is used to create a regular expression object, and operations such as `search` are done on said object.
+Using the `re` module involves creating a regex pattern. The steps can be summarised as following:
 
-ie.. Passing a string value representing your regular expression to `re.compile()` returns the regular expression pattern object, or regex object. The search is then run on this regex object.
+* Import the `re` module.
+* Create the regular expression (regex) pattern
+* Compile the regex pattern to a regex object using `re.compile()`.
+* Search the regex object using `<regex_object>.search(<word>)` for a match.
+* Call the <regex_object> `group()` method to return the actual string.
+
+NOTE: The fourth step is not mandatory, though it helps to understand if the searched string was properly matched.
+
+---
 
 To create a regex object for a 10 - digit phone number, use:
 
@@ -62,15 +72,6 @@ In[15]: my_search = phone_number_regex.search("0123456789")
 In[17]: my_search.group()
 Out[17]: '0123456789'
 ```
-
-In short, the steps to create and use a Regular expression object are:
-
-1. Import the `re` module.
-2. Create a Regex object by passing the desired pattern to `re.compile()`.
-3. Pass the string to search for, to the regex's `search()` method, which returns a match object.
-4. Call the match object's `group()` method to return the actual string.
-
-Even though the fourth step is not generally required, it helps to understand that the searched string is properly matched.
 
 ### 1.3. Grouping pattern matching with parantheses
 
